@@ -9,38 +9,12 @@ a:hover {
 
 .list-container {
   text-align: left;
-  overflow-y: auto; /* Show scrollbar when content overflows */
-  max-height: 400px; /* Adjust based on your layout */
-  flex-grow: 1;
-  margin: 0 auto;
+  overflow-y: scroll; /* Allow scrolling */
+  flex-grow: 1; /* Allow the container to take up available space */
+  margin: 0 auto; /* Center it within the parent */
   padding-right: 5px;
-  width: 100%;
+  width: 100%; /* Add space for the scrollbar */
 }
-
-/* Show scrollbar for webkit browsers (Chrome, Safari, Edge) */
-.list-container::-webkit-scrollbar {
-  width: 6px; /* Adjust width */
-}
-
-.list-container::-webkit-scrollbar-track {
-  background: #f1f1f1; /* Light gray background */
-}
-
-.list-container::-webkit-scrollbar-thumb {
-  background: #888; /* Darker scrollbar */
-  border-radius: 3px;
-}
-
-.list-container::-webkit-scrollbar-thumb:hover {
-  background: #555; /* Even darker on hover */
-}
-
-/* Enable scrollbar in Firefox */
-.list-container {
-  scrollbar-width: thin; /* Small scrollbar */
-  scrollbar-color: #888 #f1f1f1; /* Thumb and track color */
-}
-
 .no-margin {
   margin: 0;
   margin-bottom: 5px;
