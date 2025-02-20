@@ -21,7 +21,7 @@ body {
   display: flex;
   justify-content: space-between; /* Evenly space the sections */
   align-items: stretch; /* Stretch sections to full height */
-  height: 100vh; 
+  height: 100vh;
   background-color: #292121;
   text-align: center;
   position: relative;
@@ -29,6 +29,7 @@ body {
   box-sizing: border-box; /* To ensure padding is included in the width/height calculations */
   gap: 20px; /* Horizontal gap between sections */
   width: 100%;
+  flex-wrap: wrap;
 }
 
 .left-section,
@@ -37,7 +38,8 @@ body {
   display: flex;
   flex-direction: column;
   height: 100%; /* Ensure sections take full height */
-  width: 33.33%; /* Each section takes up one-third of the width */
+  width: 33.33%;
+  min-width: 300px; /* Each section takes up one-third of the width */
 }
 .left-section {
   flex: 30;
@@ -168,12 +170,17 @@ body {
   align-items: center;
   margin-top: 10px;
   width: 100%;
+  flex-wrap: wrap;
+  gap: 10px;
+  overflow: hidden;  
 }
 
 .icon {
   font-size: 1.8rem;
   color: #5a4747;
   transition: color 0.3s, transform 0.2s;
+  flex: 1 1 auto; /* Allow icons to grow and shrink */
+  text-align: center;
 }
 
 .icon:hover {
@@ -219,6 +226,9 @@ body {
     display: block; /* Ensure proper alignment */
     margin: 0 auto; /* Center the image */
   }
+  .contact-icons {
+    justify-content: space-around; /* Center icons on small screens */
+  }
 }
 
 /* Tablets (481px - 768px) */
@@ -238,6 +248,9 @@ body {
 
   .box {
     width: 100%; /* Boxes take full width in stacked layout */
+  }
+  .contact-icons {
+    justify-content: space-around; /* Space icons evenly on tablets */
   }
 }
 
@@ -259,6 +272,9 @@ body {
   .left-box {
     width: 50%; /* Each left-box takes 50% of the width */
     margin: 0; /* Remove any margin that could cause extra spacing */
+  }
+  .contact-icons {
+    justify-content: space-around; /* Space icons around on laptops */
   }
 
   /* Middle Section */
@@ -309,6 +325,9 @@ body {
     flex-direction: row; /* Keep sections side by side */
     margin-top: 50px; /* Add margin-top for large screens */
   }
+  .contact-icons {
+    justify-content: space-around; /* Space icons around on laptops */
+  }
 
   .left-section,
   .right-section,
@@ -328,5 +347,8 @@ body {
   .right-section,
   .middle-section {
     width: 33.33%; /* Each side section takes 33.33% width */
+  }
+  .contact-icons {
+    justify-content: space-around; /* Space icons around on laptops */
   }
 }
