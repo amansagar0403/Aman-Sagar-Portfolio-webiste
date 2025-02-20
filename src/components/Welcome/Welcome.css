@@ -1,0 +1,137 @@
+@import url("https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap");
+/* Hide Scrollbar but allow scrolling */
+body,
+html {
+  overflow: auto; /* Allow scrolling */
+  margin: 0;
+  padding: 0;
+  height: 100%;
+}
+
+body::-webkit-scrollbar {
+  display: none; /* Hide scrollbar on webkit browsers (Chrome, Safari, etc.) */
+}
+
+body {
+  -ms-overflow-style: none; /* Hide scrollbar on IE and Edge */
+  scrollbar-width: none; /* Hide scrollbar on Firefox */
+}
+
+.welcome-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #292121;
+  text-align: center;
+  position: relative; /* Make the container position relative */
+}
+
+.welcome-text {
+  color: #ecdfcc;
+  font-size: 10rem;
+  font-family: "Dancing Script", cursive;
+  display: inline-block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-align: center;
+  max-width: fit-content;
+  opacity: 0;
+  animation: typing 3s linear forwards, fadeIn 0.5s ease-in-out forwards;
+}
+
+/* Smooth Typing Effect */
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+/* Smooth Fade-In */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .welcome-text {
+    font-size: 5rem;
+  }
+}
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .welcome-text {
+    font-size: 7rem;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px) {
+  .welcome-text {
+    font-size: 9rem;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .welcome-text {
+    font-size: 10rem;
+  }
+}
+
+@media (min-width: 1201px) {
+  .welcome-text {
+    font-size: 12rem;
+  }
+}
+
+/* Blinking Arrow (Only Head) */
+.scroll-arrow-container {
+  position: absolute; /* Fix the arrow within the first section */
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  opacity: 0; /* Initially hidden */
+  animation: arrowFadeIn 1s ease-in-out forwards;
+  animation-delay: 1.5s; /* Delay the appearance until after typing animation */
+  z-index: 1; /* Keep it on top of other content */
+}
+
+.scroll-arrow {
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 20px solid #ecdfcc;
+  animation: blink 1.5s ease-in-out infinite;
+}
+
+/* Smooth Blinking Animation */
+@keyframes blink {
+  0%,
+  100% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 0.2;
+  }
+}
+
+/* Fade-in for the arrow */
+@keyframes arrowFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

@@ -1,0 +1,137 @@
+a {
+  text-decoration: none;
+  color: inherit; /* Inherits color from parent */
+}
+
+a:hover {
+  text-decoration: none; /* Optional: Adds underline on hover */
+}
+
+.list-container {
+  text-align: left;
+  overflow-y: scroll; /* Allow scrolling */
+  flex-grow: 1; /* Allow the container to take up available space */
+  margin: 0 auto; /* Center it within the parent */
+  padding-right: 5px;
+  width: 100%; /* Add space for the scrollbar */
+}
+.no-margin {
+  margin: 0;
+  margin-bottom: 5px;
+}
+.paragraph {
+  margin: 0;
+  font-size: 15px;
+  font-family: "Inter", sans-serif;
+}
+/* Hide scrollbar for webkit browsers (Chrome, Safari, etc.) */
+.list-container::-webkit-scrollbar {
+  width: 0; /* Hide scrollbar */
+  height: 0; /* Hide horizontal scrollbar if present */
+}
+/* Hide scrollbar for Firefox */
+.list-container {
+  scrollbar-width: none; 
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; /* Remove margin for perfect left alignment */
+}
+
+.project-item {
+  margin-bottom: 10px;
+  padding: 5px;
+  border-radius: 8px;
+  transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition for color and background */
+  cursor: pointer; /* Change the cursor to a pointer */
+}
+
+/* Reverse colors and change cursor on hover */
+.project-item:hover {
+  background-color: #292121; /* Background color on hover */
+  color: #ecdfcc; /* Text color on hover */
+}
+.role {
+  font-size: 14px;
+  font-weight: bold;
+  color: #5a4747;
+  margin-bottom: 3px;
+  font-family: "Inter", sans-serif;
+}
+
+/* Mobile devices (320px - 480px) */
+@media (max-width: 480px) {
+  .paragraph {
+    font-size: 13px;
+  }
+
+  .list-container {
+    padding-right: 3px; /* Adjust space for smaller screens */
+  }
+
+  .project-item {
+    padding: 4px; /* Adjust padding for smaller devices */
+  }
+}
+
+/* Tablets (481px - 768px) */
+@media (min-width: 481px) and (max-width: 768px) {
+  .paragraph {
+    font-size: 14px;
+  }
+
+  .list-container {
+    padding-right: 5px;
+  }
+
+  .project-item {
+    padding: 5px; 
+  }
+}
+
+/* Laptops (769px - 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .paragraph {
+    font-size: 15px;
+  }
+
+  .list-container {
+    padding-right: 5px;
+  }
+
+  .project-item {
+    padding: 6px; 
+  }
+}
+
+/* Large devices (1025px - 1200px) */
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .paragraph {
+    font-size: 16px;
+  }
+
+  .list-container {
+    padding-right: 6px;
+  }
+
+  .project-item {
+    padding: 8px;
+  }
+}
+
+/* Devices larger than 1200px (desktops) */
+@media (min-width: 1201px) {
+  .paragraph {
+    font-size: 17px;
+  }
+
+  .list-container {
+    padding-right: 8px;
+  }
+
+  .project-item {
+    padding: 10px;
+  }
+}
