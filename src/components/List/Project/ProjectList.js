@@ -4,8 +4,8 @@ import "./List.css";
 const ProjectList = () => {
     const projects = [
         {
-            title: "YouTube Lecture Summarizer",
-            description: "A model that summarizes YouTube lectures with unique features and a React-based interface.",
+            title: "Stock Predictor",
+            description: "An advanced stock price prediction system integrating LSTM, Transformer, XGBoost, and Reinforcement Learning (DQN) with sentiment analysis, real-time insights, adaptive hyperparameter tuning, and investment recommendations based on market trends and volatility.",
             link: "https://github.com/amansagar0403/YouTube-Lecture-summarizer"
         },
         {
