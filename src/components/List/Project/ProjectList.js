@@ -5,8 +5,8 @@ const ProjectList = () => {
     const projects = [
         {
             title: "Stock Predictor",
-            description: "An advanced stock price prediction system integrating LSTM, Transformer, XGBoost, and Reinforcement Learning (DQN) with sentiment analysis, real-time insights, adaptive hyperparameter tuning, and investment recommendations based on market trends and volatility.",
-            link: "https://github.com/amansagar0403/YouTube-Lecture-summarizer"
+            description: "A hybrid stock prediction system using LSTM, Transformer, XGBoost, and DQN with sentiment analysis, real-time insights, and investment recommendations.",
+            link: "https://github.com/amansagar0403/Stock-predictor"
         },
         {
             title: "SmartDoc",
