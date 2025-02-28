@@ -16,7 +16,7 @@ const ProjectList = () => {
         {
             title: "Alumni Connect",
             description: "A platform connecting students with alumni for mentorship and networking.",
-            link: "https://github.com/amansagar0403/SNU_CONNECT-MAIN"
+            link: "https://github.com/amansagar0403/SNU_CONNECT-MAIN-"
         },
     ];
 
