@@ -6,9 +6,6 @@ This is the source code for my personal portfolio website. It showcases my work 
 
 To get a local copy up and running, follow these steps:
 
-### Prerequisites
-
-- Node.js and npm installed on your machine. You can download them from [nodejs.org](https://nodejs.org/).
 
 ### Installation
 
