@@ -2,14 +2,6 @@
 
 This is the source code for my personal portfolio website. It showcases my work experience, projects, publications, and skills.
 
-## Table of Contents
-
-- [Getting Started](#getting-started)
-- [Available Scripts](#available-scripts)
-- [Project Structure](#project-structure)
-- [Technologies Used](#technologies-used)
-- [Contact](#contact)
-
 ## Getting Started
 
 To get a local copy up and running, follow these steps:
